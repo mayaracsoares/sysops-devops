@@ -83,6 +83,7 @@ Foi adquirido conhecimentos fundamentais de computação, sistemas operacionais 
 * Compreensão do funcionamento de processos e serviços.
 * Utilização do terminal como ferramenta principal de administração.
 * Resolução de desafios práticos utilizando comandos de linha de comando.
+* Resolver desafios CTF.
 
 
 

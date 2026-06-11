@@ -56,3 +56,6 @@ Ao final desta fase, fui capaz de:
 - Publicar e sincronizar projetos no GitHub.
 - Manter um histórico organizado de alterações em projetos.
 - Resolução de desafios práticos
+- Identificar e corrigir erros em scripts.
+- Trabalhar com commits, branches e tags.
+- Resolver desafios CTF.
