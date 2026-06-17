@@ -1,3 +1,5 @@
+[![Python CI](https://github.com/hellommay/cyber_studies/actions/workflows/ci.yml/badge.svg)](https://github.com/hellommay/cyber_studies/actions/workflows/ci.yml)
+
 # Cybersecurity Training
 
 Repositório dedicado para documentar minha jornada de aprendizado aprendendo desde a Base.
