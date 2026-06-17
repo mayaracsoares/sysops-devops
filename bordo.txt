@@ -1,0 +1,2 @@
+Aprendi a usar try/except e with open.
+Aprendi a fazer tabuada
