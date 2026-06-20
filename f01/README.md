@@ -83,7 +83,7 @@ Durante esta fase foram estudados os fundamentos de hardware, sistemas operacion
 
 ## Habilidades Desenvolvidas:
 
-<<<<<<< HEAD
+
 Ao final desta fase, fui capaz de:
 
 * Navegação eficiente no sistema Linux.
