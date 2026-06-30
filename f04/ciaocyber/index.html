@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciao Cyber</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400" rel="stylesheet">
+
+    <style>
+/* Parte 1: Cores e Fontes */
+        :root {
+            --background: #1c1c1c;
+            --primary-color: #1c1c1c;
+            --secondary-color: #fbf4f4;
+            --font-family: 'Roboto', sans-serif;
+            --line: #e0e0e0;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--primary-color);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+/* Parte 2: layout e alinhamento */
+/* cabecaljo */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 10%;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: -0.5px;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+/* conteudo principal (centralizado) */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10%;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--secondary-color);
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+/*botao minimalista*/
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-decoration: none;
+            border-radius: 4px;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+        /* rodapé */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: var(--secondary-color);
+            border-top: 1px solid var(--line);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CIAO.</div>
+        <nav>
+            <a href="#" class="btn">Projetos</a>
+            <a href="#" class="btn">Sobre</a>
+            <a href="#" class="btn">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Ciao Cyber!</h1>
+            <p>Este é um exemplo de página HTML.</p>
+            <a href="#" class="btn"> ... </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ciao Cyber. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
