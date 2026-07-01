@@ -1,4 +1,4 @@
-[![Python CI](https://github.com/hellommay/cyber_studies/actions/workflows/ci.yml/badge.svg)](https://github.com/hellommay/cyber_studies/actions/workflows/ci.yml)
+[![Python CI](https://github.com/ciaomah/cyber_studies/actions/workflows/py-ci.yml/badge.svg)](https://github.com/ciaomah/cyber_studies/actions/workflows/py-ci.yml) [![HTML CI](https://github.com/ciaomah/cyber_studies/actions/workflows/html-ci.yml/badge.svg)](https://github.com/ciaomah/cyber_studies/actions/workflows/html-ci.yml)
 
 # Cybersecurity Training
 
