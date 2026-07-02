@@ -1,0 +1,19 @@
+services:
+  web:
+    build: ./app
+    ports:
+      - "8000:8000"
+    environment:
+      OPERADOR: maestro
+    depends_on:
+      - banco
+
+  banco:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: terino123
+    volumes:
+      - dados:/var/lib/postgresql/data
+
+volumes:
+  dados:
