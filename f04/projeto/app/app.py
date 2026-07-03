@@ -6,10 +6,11 @@ import time
 app = Flask(__name__)
 
 # Configurações do banco vindas das variáveis de ambiente do Compose
-HOST = os.environ.get('HOST', 'banco')
-NAME = os.environ.get('NAME', 'mural')
-USER = os.environ.get('USER', 'operario')
-PASSWORD = os.environ.get('PASSWORD', 'treino123')
+HOST = os.environ.get("HOST", "banco")
+NAME = os.environ.get("NAME", "mural")
+USER = os.environ.get("USER", "operario")
+PASSWORD = os.environ.get("PASSWORD", "treino123")
+
 
 def obter_conexao_banco():
     # Loop para esperar o Postgres subir completamente antes do Flask tentar conectar
@@ -23,44 +24,47 @@ def obter_conexao_banco():
             time.sleep(2)
     raise Exception("Não foi possível conectar ao banco de dados Postgres.")
 
+
 # Inicializa a tabela no banco
 def init_banco():
     conn = obter_conexao_banco()
     cur = conn.cursor()
-    cur.execute('''
+    cur.execute(
+        """
         CREATE TABLE IF NOT EXISTS contador (
             id SERIAL PRIMARY KEY,
             visitas INT NOT NULL DEFAULT 0
         );
-    ''')
+    """
+    )
     # Garante que existe pelo menos uma linha de registro
-    cur.execute('SELECT COUNT(*) FROM contador;')
+    cur.execute("SELECT COUNT(*) FROM contador;")
     if cur.fetchone()[0] == 0:
-        cur.execute('INSERT INTO contador (visitas) VALUES (0);')
+        cur.execute("INSERT INTO contador (visitas) VALUES (0);")
     conn.commit()
     cur.close()
     conn.close()
 
-@app.route('/')
+
+@app.route("/")
 def home():
     conn = obter_conexao_banco()
     cur = conn.cursor()
 
     # Atualiza e busca o contador de forma persistente
-    cur.execute('UPDATE contador SET visitas = visitas + 1 WHERE id = 1;')
-    cur.execute('SELECT visitas FROM contador WHERE id = 1;')
+    cur.execute("UPDATE contador SET visitas = visitas + 1 WHERE id = 1;")
+    cur.execute("SELECT visitas FROM contador WHERE id = 1;")
     total_visitas = cur.fetchone()[0]
 
     conn.commit()
     cur.close()
     conn.close()
 
-    return jsonify({
-        "esquadrao": "Bem vindo!",
-        "status": "Online",
-        "visitas": total_visitas
-    })
+    return jsonify(
+        {"esquadrao": "Bem vindo!", "status": "Online", "visitas": total_visitas}
+    )
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     init_banco()
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host="0.0.0.0", port=5000)
