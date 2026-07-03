@@ -57,4 +57,17 @@ Os conceitos foram aplicados em laboratórios práticos e também trabalhamos em
 
 ---
 
+#### Habilidades Desenvolvidas
 
+Ao final da fase, fui capaz de:
+
+* Compreender os conceitos de conteinerização e Docker
+* Criar imagens personalizadas utilizando Dockerfile
+* Gerenciar o ciclo de vida de containers
+* Utilizar volumes para persistência de dados
+* Configurar comunicação entre containers através de redes Docker
+* Orquestrar aplicações com Docker Compose
+* Diagnosticar problemas utilizando logs e inspeção de containers
+* Integrar aplicações Python com PostgreSQL em ambiente conteinerizado
+* Desenvolver e documentar projetos Docker seguindo boas práticas
+* Desafios e projeto prático, aplicando os conceitos aprendidos
