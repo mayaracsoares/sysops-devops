@@ -89,10 +89,9 @@ Ao final desta fase, fui capaz de:
 * Gerenciamento básico de usuários e permissões.
 * Compreensão do funcionamento de processos e serviços.
 * Utilização do terminal como ferramenta principal de administração.
-* Criar e trabalhar com listas 
+* Criar e trabalhar com listas
 * Resolução de desafios práticos utilizando comandos de linha de comando.
 * Resolver desafios CTF.
-=======
 * Navegação eficiente em ambientes Linux.
 * Manipulação de arquivos e diretórios pelo terminal.
 * Leitura e análise de logs.
