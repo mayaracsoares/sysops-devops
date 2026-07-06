@@ -1,0 +1,15 @@
+name: ola-esteira
+
+on: push
+
+jobs:
+    saudacao:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Apresentar o runner
+              run: |
+                echo "Olá! Eu sou o robo da esteira"
+                echo "Estou rodando em: $(uname -a)"
+                echo "Data aqui no runner: $(date)"
+            - name: Mostrar quem disparou
+              run: echo "Disparado por ${{ github.actor }} no commit ${{ github.sha }}"
