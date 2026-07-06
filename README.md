@@ -17,3 +17,11 @@ Cada fase contém resumos dos conteúdos estudados, comandos utilizados e concei
 ## Aprendizado
 
 ⚠️ Projeto desenvolvido para estudo e prática utilizando uma plataforma especifica de treinamentos.
+---
+
+* Fase 01 -> Sistema Operacional e Fundamentos
+* Fase 02 -> Lógica de Programação (Python básico) e Git/Github
+* Fase 03 -> Redes
+* Fase 04 -> Containers (Docker) - 
+  [docker-diary](https://github.com/ciaomah/docker-diary)
+* Fase 05 -> CI/CD
