@@ -1,0 +1,14 @@
+name: cofre
+
+on: workflow_dispatch
+
+jobs:
+    usar-segredo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Usar o token sem expor
+              env:
+                TOKEN: ${{ secrets.TOKEN_DO_LAB }}
+              run: |
+                echo "O token tem ${#TOKEN} caracteres"
+                echo "Tentando imprimir: $TOKEN"
