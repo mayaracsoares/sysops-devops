@@ -3,3 +3,6 @@ def celsius_para_fahrenheit(c):
 
 def fahrenheit_para_celsius(f):
     return (f - 32) * 5/9
+
+def kelvin_para_celsius(k):
+    return k - 273.15
