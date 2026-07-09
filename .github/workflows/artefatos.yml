@@ -1,0 +1,19 @@
+name: artefatos
+
+on: push
+
+jobs:
+    gerar-relatorio:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Produzir um relatorio
+              run: |
+                mkdir -p saida
+                echo "Relatorio do build $(date)" > saida/relatorio.txt
+                echo "Commit: ${{ github.sha }}" >> saida/relatorio.txt
+            - name: Guardar na prateleira
+              uses: actions/upload-artifact@v4
+              with:
+                name: relatorio-do-build
+                path: saida/
