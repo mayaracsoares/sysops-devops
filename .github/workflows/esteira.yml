@@ -11,6 +11,7 @@ jobs:
               with:
                 python-version: "3.12"
                 cache: "pip"
+            - run: ls -R
             - run: pip install -r app/requirements.txt
             - run: PYTHONPATH=app python -m pytest -v
 
