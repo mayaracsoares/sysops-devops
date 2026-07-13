@@ -29,7 +29,7 @@ jobs:
 
       - name: Rodar linter (Ruff)
         run: |
-          ruff check . --max-line-length=120 --exclude=.git,__pycache__,.venv
+          ruff check .
 
       - name: Executar Testes Automatizados
         run: |
