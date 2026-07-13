@@ -15,7 +15,14 @@ jobs:
               with:
                 python-version: ${{ matrix.python-version }}
             - name: Install dependencies
-              run: pip install pytest
+              run: |
+                python -m pip install --upgrade pip
+                python -m pip install -r f04/projeto/requirements.txt
+                python -m pip install pytest
+
+            - name: Verificar Flask
+              run: python -c "import flask; print(flask.__version__)"
+
             - name: Teste f04
               working-directory: f04/projeto/
               run: python -m pytest -v
