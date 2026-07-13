@@ -1,4 +1,4 @@
-from app.conversor import celsius_para_fahrenheit, fahrenheit_para_celsius
+from conversor_app.conversor import celsius_para_fahrenheit, fahrenheit_para_celsius
 
 
 def test_celsius_para_fahrenheit():
@@ -11,6 +11,6 @@ def test_fahrenheit_para_celsius():
 
 
 def test_kelvin_para_celsius():
-    from app.conversor import kelvin_para_celsius
+    from conversor_app.conversor import kelvin_para_celsius
 
     assert kelvin_para_celsius(273.15) == 0
