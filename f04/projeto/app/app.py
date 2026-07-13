@@ -16,9 +16,7 @@ def obter_conexao_banco():
     # Loop para esperar o Postgres subir completamente antes do Flask tentar conectar
     for _ in range(30):
         try:
-            conn = psycopg2.connect(
-                host=HOST, database=NAME, user=USER, password=PASSWORD
-            )
+            conn = psycopg2.connect(host=HOST, database=NAME, user=USER, password=PASSWORD)
             return conn
         except psycopg2.OperationalError:
             time.sleep(2)
