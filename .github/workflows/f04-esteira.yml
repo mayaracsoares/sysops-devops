@@ -41,7 +41,7 @@ jobs:
         steps:
             - uses: actions/checkout@v4
             - name: Buildar a imagem
-              working-directory: ./f04/projeto
+              working-directory: ./f02_devops/04_containers/projeto
               run: docker build -t mural:${{ github.sha }} .
             - name: Conferir o tamanho
               run: docker images mural

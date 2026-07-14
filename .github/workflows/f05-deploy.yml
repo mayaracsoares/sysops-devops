@@ -19,6 +19,6 @@ jobs:
             - uses: actions/checkout@v4
             - uses: actions/upload-pages-artifact@v3
               with:
-                path: f04/site/
+                path: f02_devops/04_containers/site/
             - uses: actions/deploy-pages@v4
               id: deployment
