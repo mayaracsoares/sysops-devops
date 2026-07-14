@@ -1,8 +1,10 @@
-.git
-.venv
+.git/
+.venv/
 __pycache__/
 *.pyc
 venv/
-.env
+.env*
+env/
+.github/
 .gitignore
 
