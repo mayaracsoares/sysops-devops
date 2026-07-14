@@ -1,19 +1,23 @@
 [![Python CI](https://github.com/ciaomah/cyber_studies/actions/workflows/py-ci.yml/badge.svg)](https://github.com/ciaomah/cyber_studies/actions/workflows/py-ci.yml) [![HTML CI](https://github.com/ciaomah/cyber_studies/actions/workflows/html-ci.yml/badge.svg)](https://github.com/ciaomah/cyber_studies/actions/workflows/html-ci.yml)
 
-# Cybersecurity Training
-Repositório dedicado para documentar minha jornada de aprendizado criando uma base sólida na area de Segurança.
+# Trilha Júnior Devops e Segurança
+Repositório dedicado para documentar minha jornada de aprendizado criando uma base sólida na área de Segurança.
 
 ## Objetivos
 
-* Desenvolver conhecimentos Linux focadas em segurança.
-* Praticar conceitos por meio de laboratórios, provas e desafios CTF.
+* Desenvolver conhecimentos Linux, adquirindo uma base sólida.
+* Praticar conceitos por meio de laboratórios, provas.
+* Desafios na prática de CTF a cada final de módulo.
 * Registrar aprendizados e evolução técnica.
-
-Cada fase contém resumos dos módulos, desafios práticos dos conteúdos estudados, comandos utilizados e conceitos aprendidos.
 
 ---
 
-⚠️ Projeto desenvolvido para estudo e prática utilizando uma plataforma especifica de treinamentos.
+⚠️ **Nota:**
+
+Atualmente, o cronograma de estudos da **[Cyber Treinamentos](https://cyber-treinamentos.vercel.app)**.
+
+Esta plataforma é o meu ponto de partida para a transição de carreira, onde tenho acesso a um cronograma completo e estruturado e focado nas demandas reais do mercado.
+Cada desafio proposto lá é documentado aqui em formato de código, scripts e anotações, unindo a metodologia da plataforma com o meu aprendizado diário no terminal.
 
 ---
 
