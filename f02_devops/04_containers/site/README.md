@@ -3,8 +3,37 @@
 ### Sobre:
 O desafio pedia a criação de uma página HTML simples para praticar o uso de **Bind Mount** com `Docker` e `Nginx`.
 
+### Como Executar:
+Container Nginx com Bind Mount (Read-Only)
+
+Execute o comando abaixo para iniciar um Nginx na porta `8080`, espelhando a pasta atual `site` para a pasta de arquivos estáticos do Nginx, de modo que o container tenha permissão apenas de leitura. (`:ro`):
+
+```bash
+# Entre na pasta do site
+cd sysops-devops/f02_devops/04_containers/site/
+
+# Executar o comando
+docker run -d --name ciao-nginx \
+-p 8080:80 \
+-v $(pwd):/usr/share/nginx/html:ro \
+nginx:alpine
+```
+
+Com o container rodando, abra o navegador de preferência e acesse: [http://localhost:8080](http://localhost:8080)
+
+```bash
+# Parar a execucao
+docker stop ciao-nginx
+
+#remover o container
+docker rm ciao-nginx
+```
+
+
 ---
-#### O que aprendi:
+
+
+### O que foi aprendido:
 
 * Criar e servir um site estático utilizando o Nginx em um container
 * Utilizar Bind Mount para espelhar uma pasta do host dentro do container
