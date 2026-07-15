@@ -1,5 +1,33 @@
 # Lógica de Programação e Git/GitHub
 
+#### Projetos Incluídos:
+ Os seguintes scripts estão disponíveis para teste e execução.
+
+Python:
+
+ [diário-de-bordo.py](https://github.com/ciaomah/sysops-devops/blob/main/f01_fundamentos/02_logica_e_git/diario_de_bordo.py) | [ferramentas.py](https://github.com/ciaomah/sysops-devops/blob/main/f01_fundamentos/02_logica_e_git/ferramentas.py) | [inventario.py](https://github.com/ciaomah/sysops-devops/blob/main/f01_fundamentos/02_logica_e_git/inventario.py) | [tabuada.py](https://github.com/ciaomah/sysops-devops/blob/main/f01_fundamentos/02_logica_e_git/tabuada.py) | [triagem.py](https://github.com/ciaomah/sysops-devops/blob/main/f01_fundamentos/02_logica_e_git/triagem.py)
+
+#### Como executar:
+Antes de executar, certifique-se que tem o **Python3** instalado no seu sistema.
+
+```bash
+# Baixar Python caso não tenha (Linux)
+sudo apt update && sudo apt install python3
+
+# Clonar o repositório principal
+git clone https://github.com/ciaomah/sysops-devops.git
+
+# Entrar na pasta do projeto
+cd sysops-devops/f01_fundamentos/02_logica_e_git
+
+# Exemplo de execução
+python3 diario-de-bordo.py
+```
+
+---
+
+## Resumo do Módulo
+
 ### Fundamentos de Programação, Python e Versionamento
 
 Nesta fase foram estudados os fundamentos da lógica de programação utilizando Python, além das principais ferramentas de versionamento de código com Git e GitHub.
