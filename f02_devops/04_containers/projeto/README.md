@@ -9,6 +9,29 @@ A aplicação registra e mantém um contador de visitas persistente no banco de 
 * `postgresql:16`
 * `docker` & `docker compose` (`up`-`down`)
 
+#### Pré-requisitos:
+Antes de iniciar, certifique-se de ter o Python e o Git instalado em sua máquina Linux.
+```bash
+# Atualizar pacotes e instalar dependências do sistema
+sudo apt update && sudo apt install -y python3-pip python3-xlib git
+```
+```bash
+# Clone o Repositório
+git clone https://github.com/ciaomah/sysops-devops
+
+# Entrar na pasta do projeto
+cd sysops-devops/f02_devops/04_containers/projeto/
+
+# Instalar dependências locais (Opcional, para rodar sem Docker)
+pip install -r requirements.txt
+```
+```bash
+# Executar com Docker
+# dentro da pasta projeto/
+docker compose up -d --build
+```
+
+
 ---
 ### Conceitos Praticados:
 **Docker**
