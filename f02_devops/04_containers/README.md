@@ -1,7 +1,37 @@
 # Docker e Conteinerização
 
+#### Estrutura:
+O módulo está dividido em dois projetos principais com objetivos distintos.
+
+ 1- **Projeto Mural App:** Uma aplicação desenvolvida em **Python** integrada a um banco de dados **PostgreSQL**.
+
+* Foi praticado a criação de imagens, configuração de redes internas do Docker, persistência de dados com volume e orquestração multi-container.
+
+* Tecnologias: `Python`, `PostgreSQL`, `Flask`, `Dockerfile`, `Docker compose`.
+
+[Ver instruções de execução - Mural App](https://github.com/ciaomah/sysops-devops/blob/main/f02_devops/04_containers/projeto/README.md)
+
+2- **Projeto Site:** Um ambiente conteinerizado para servir uma página web estática.
+
+* Foi praticado a utilização de imagens prontas, mapeamento de portas e montagem de volumes do tipo `bind mount` para desenvolvimento local.
+
+* Tecnologias: `HTML`, `Nginx`.
+
+[Ver instruções de execução - Site](https://github.com/ciaomah/sysops-devops/blob/main/f02_devops/04_containers/site/README.md)
+
+#### Pré-requisitos:
+Para executar qualquer um dos projetos desse módulo, é necessário ter o ambiente do Docker devidamente instalado na sua máquina.
+
+```bash
+# Certifique-se que seu usuário atual pertence ao grupo `docker` para evitar a necessidade de rodar comandos com `sudo`
+sudo usermod -aG docker $USER && newgrp docker
+```
+
+
+
+## Resumo do Módulo
+
 Nesta fase foram abordados os fundamentos de Docker e conteinerização, a empacotar aplicações, criar imagens, gerenciar containers e orquestrar ambientes utilizando **Docker Compose**.
-Os conceitos foram aplicados em laboratórios práticos e também trabalhamos em um projeto integrando uma aplicação **Python** com banco de dados **PostgreSQL**.
 
 ---
 
