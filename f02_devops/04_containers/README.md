@@ -1,6 +1,7 @@
 # Docker e Conteinerização
 [Diário Docker - Resumo](https://github.com/mayaracsoares/sysops-devops/blob/main/f02_devops/04_containers/diario_docker.md)
-#### Estrutura:
+
+### Estrutura:
 O módulo está dividido em dois projetos principais com objetivos distintos.
 
  1- **Projeto Mural App:** Uma aplicação desenvolvida em **Python** integrada a um banco de dados **PostgreSQL**.
@@ -26,14 +27,10 @@ Para executar qualquer um dos projetos desse módulo, é necessário ter o ambie
 # Certifique-se que seu usuário atual pertence ao grupo `docker` para evitar a necessidade de rodar comandos com `sudo`
 sudo usermod -aG docker $USER && newgrp docker
 ```
-
-
-
+---
 ## Resumo do Módulo
 
 Nesta fase foram abordados os fundamentos de Docker e conteinerização, a empacotar aplicações, criar imagens, gerenciar containers e orquestrar ambientes utilizando **Docker Compose**.
-
----
 
 ## Conteúdos Abordados
 
