@@ -20,8 +20,9 @@ Criando a base necessária para entender como a infraestrutura funciona.
 
 #### [F02 - DevOps](https://github.com/ciaomah/sysops-devops/tree/main/f02_devops)
 Práticas modernas de automação, padronização e entrega contínua.
-* **[Containers Docker](https://github.com/ciaomah/sysops-devops/tree/main/f02_devops/04_containers)** Criação de imagens, orquestração local, meu **[Diário](https://github.com/ciaomah/sysops-devops/blob/main/f02_devops/04_containers/diario_docker.md)**, **[Projeto App](https://github.com/ciaomah/sysops-devops/tree/main/f02_devops/04_containers/projeto)** e [Projeto Site](https://github.com/ciaomah/sysops-devops/tree/main/f02_devops/04_containers/site)
-* **[CI/CD](https://github.com/ciaomah/sysops-devops/tree/main/f02_devops/05_cicd)** Automação de deploys e esteiras de integração contínua.
+* **[Containers Docker](https://github.com/ciaomah/sysops-devops/tree/main/f02_devops/04_containers)**: Criação de imagens, orquestração local, meu **[Diário](https://github.com/ciaomah/sysops-devops/blob/main/f02_devops/04_containers/diario_docker.md)**, **[Projeto App](https://github.com/ciaomah/sysops-devops/tree/main/f02_devops/04_containers/projeto)** e **[Projeto Site](https://github.com/ciaomah/sysops-devops/tree/main/f02_devops/04_containers/site)**.
+* **[CI/CD](https://github.com/ciaomah/sysops-devops/tree/main/f02_devops/05_cicd)**: Automação de deploys e esteiras de integração contínua.
+* **[AWS](https://github.com/mayaracsoares/sysops-devops/blob/main/f02_devops/06_AWS/README.md)**: Conceitos fundamentais de computação em nuvem utilizando a AWS.
 
 ---
 #### Tecnologias
