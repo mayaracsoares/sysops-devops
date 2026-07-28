@@ -1,5 +1,6 @@
 import os
 import time
+
 import psycopg2
 from flask import Flask, jsonify
 
