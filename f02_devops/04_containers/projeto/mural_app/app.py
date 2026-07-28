@@ -1,7 +1,7 @@
-from flask import Flask, jsonify
-import psycopg2
 import os
 import time
+import psycopg2
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
@@ -20,7 +20,7 @@ def obter_conexao_banco():
             return conn
         except psycopg2.OperationalError:
             time.sleep(2)
-    raise Exception("Não foi possível conectar ao banco de dados Postgres.")
+    raise RuntimeError("Não foi possível conectar ao banco de dados Postgres.")
 
 
 # Inicializa a tabela no banco
